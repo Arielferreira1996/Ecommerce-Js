@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>E-commerce</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="body-container">
+  <header class="header">
+
+    <!-- IMAGEN DEL MUNU Y LOGO DE LA BARRA DE NAVEGACION -->
+    <div class="header__navigation">
+      <img class="header__menu" src="./images/icon-menu.svg" alt="icono menu">
+      <img class="header__logo" src="./images/logo.svg" alt="logo menu">
+
+      <!-- BARRA DE NAVEGACION -->
+      <nav class="navbar">
+        <ul class="navbar__items">
+          <li><a class="navbar__link" href="">Coleccion</a></li>
+          <li><a class="navbar__link" href="">Hombre</a></li>
+          <li><a class="navbar__link" href="">Mujer</a></li>
+          <li><a class="navbar__link" href="">Sobre Nosotros</a></li>
+          <li><a class="navbar__link" href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- MODAL DE BARRA DE NAVEGACION -->
+
+    <div class="modal-navbar__background">
+      <nav class="modal-navbar">
+        <img class="modal-navbar__close" src="./images/icon-close.svg" alt="icono de cierre">
+        <ul class=" modal-navbar__items">
+          <li><a class="modal-navbar__link" href="">Coleccion</a></li>
+          <li><a class="modal-navbar__link" href="">Hombre</a></li>
+          <li><a class="modal-navbar__link" href="">Mujer</a></li>
+          <li><a class="modal-navbar__link" href="">Sobre Nosotros</a></li>
+          <li><a class="modal-navbar__link" href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ICONO DEL CARRITO Y AVATAR -->
+
+    <div class="header__cart-avatar ">
+      <div class="header__cart">
+        <div class="header__cart--notification">3</div>
+        <img src="./images/icon-cart.svg" alt="icono de carrito">
+      </div>
+      <img class="header__avatar" src="./images/image-avatar.png" alt="imagen de avatar">
+    </div>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main>
+    <!-- SECCION COMPLETA DE LA PAGINA -->
+    <section class="content">
+
+      <!-- ARTICULO UNO DE LA PAGINA -->
+      <article class="gallery">
+        <div class="gallery__image-container">
+          <img class="gallery__previous" src="./images/icon-previous.svg" alt="anterior">
+          <img class="gallery__next" src="./images/icon-next.svg" alt="siguiente">
+        </div>
+        <div class="gallery__thumnails">
+          <img id="product__one" class="gallery__thumnail" src="./images/image-product-1-thumbnail.jpg" alt="miniatura">
+          <img id="product__two" class="gallery__thumnail" src="./images/image-product-2-thumbnail.jpg" alt="miniatura">
+          <img id="product__three" class="gallery__thumnail" src="./images/image-product-3-thumbnail.jpg"
+            alt="miniatura">
+          <img id="product__four" class="gallery__thumnail" src="./images/image-product-4-thumbnail.jpg"
+            alt="miniatura">
+        </div>
+      </article>
+
+      <!-- ARTICULO DOS DE LA PAGINA -->
+
+      <article class="details">
+        <h2 class="details__company">Empresa de zapatillas</h2>
+        <h2 class="details__title">Zapatillas de deporte edición limitada de otoño</h2>
+        <p class="details__descriptions"> Estas zapatillas de deporte de perfil bajo son tu compañero de ropa informal perfecto. Con una
+          suela exterior de goma duradera, resistirán todo lo que el clima pueda ofrecer.</p>
+        <div class="details__prices">
+          <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+          <p class="details__before"> $250.00</p>
+        </div>
+        <div class="details__product-quantity">
+          <div class="input">
+            <img src="./images/icon-minus.svg" class="input__minus" alt="icono signo menos">
+            <input type="text" class="input__number" value="0">
+            <img src="./images/icon-plus.svg" class="input__plus" alt="icono signo mas">
+          </div>
+          <button class="details__button"> <img src="./images/icon-cart-w.svg" alt="icono carrito"> Agregar al carrito</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- INICIO DE MODAL  -->
+
+    <div class="cart-modal">
+      <p class="cart-modal__title">Carrrito</p>
+      <div class="cart-modal__checkout-container">
+        <div class="cart-modal__details-container">
+          <img class="cart-modal__image" src="./images/image-product-1-thumbnail.jpg" alt="miniatura">
+          <div>
+            <p class="cart-modal__product">Edicion Limitada De Otoño</p>
+            <p class="cart-modal__price">$125 x3 <span>$375.00</span></p>
+          </div>
+          <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="icon-delete">
+        </div>
+        <button class="cart-modal__checkout">Continuar</button>
+      </div>
+    </div>
+
+    <!-- FIN DEL MODAL -->
+    <div class="modal-gallery__background">
+      <article class="modal-gallery">
+        <div class="modal-gallery__close-container" >
+          <img class="modal-gallery__close" src="./images/icon-close.svg" alt="icon-close"></div>
+        <div class="modal-gallery__image-container">
+          <img class="modal-gallery__previous" src="./images/icon-previous.svg" alt="anterior">
+          <img class="modal-gallery__next" src="./images/icon-next.svg" alt="siguiente">
+        </div>
+        <div class="modal-gallery__thumnails">
+          <img id="p__one" class="modal-gallery__thumnail" src="./images/image-product-1-thumbnail.jpg" alt="miniatura">
+          <img id="p__two" class="modal-gallery__thumnail" src="./images/image-product-2-thumbnail.jpg" alt="miniatura">
+          <img id="p__three" class="modal-gallery__thumnail" src="./images/image-product-3-thumbnail.jpg"
+            alt="miniatura">
+          <img id="p__four" class="modal-gallery__thumnail" src="./images/image-product-4-thumbnail.jpg"
+            alt="miniatura">
+        </div>
+      </article>
+    </div>
+    <!-- INICIO DE MODAL -->
+
+
+    <!-- FIN DEL MODAL -->
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ariel Ferreira</a>.
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="./js/Scripts.js"></script>
+  <script src="./js/clase 5.js"></script>
+</body>
+
+</html>
